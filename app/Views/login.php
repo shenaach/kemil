@@ -1,75 +1,103 @@
-<body>
-  <div id="app">
-    <section class="section">
-      <div class="d-flex flex-wrap align-items-stretch">
-        <div class="col-lg-4 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white">
-          <div class="p-4 m-3">
-            <img src="../assets/img/stisla-fill.svg" alt="logo" width="80" class="shadow-light rounded-circle mb-5 mt-2">
-            <h4 class="text-dark font-weight-normal">Welcome to <span class="font-weight-bold">Stisla</span></h4>
-            <p class="text-muted">Before you get started, you must login or register if you don't already have an account.</p>
-            <form method="POST" action="#" class="needs-validation" novalidate="">
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
-                <div class="invalid-feedback">
-                  Please fill in your email
-                </div>
-              </div>
+<html>
+	<head>
+		<title>Login - Maw n Paw</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<!-- Google fonts NUNITO -->
+		<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
-              <div class="form-group">
-                <div class="d-block">
-                  <label for="password" class="control-label">Password</label>
-                </div>
-                <input id="password" type="password" class="form-control" name="password" tabindex="2" required>
-                <div class="invalid-feedback">
-                  please fill in your password
-                </div>
-              </div>
+	<style>
+		html, body{
+			height: 100%;
+		}
+		body{
+		background: rgb(157,65,65);
+		}
+		.cont-login{
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.jumb-login{
+			background: rgb(229,206,206);
+			width: 612px;
+			height: 395px;
+		}
+		.jumbotron h1{
+			font-family: 'Nunito', sans-serif;
+			font-weight: 900;
+			font-size: 36px;
+			color: #452E2E;
+		}
+		.teks{
+			font-family: 'Nunito', sans-serif;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 25px;
+			display: flex;
+			align-items: center;
 
-              <div class="form-group">
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" name="remember" class="custom-control-input" tabindex="3" id="remember-me">
-                  <label class="custom-control-label" for="remember-me">Remember Me</label>
-                </div>
-              </div>
+			color: #452E2E;
+		}
+		.masuk-btn{
+			width: 150px;
+			height: 50px;
+			margin: 0 auto;
+			padding: 0;
+			display: inline-block;
+			line-height: 50px;
+			text-align: center;
+			background: #452E2E;
+			border-radius: 20px;
+			font-family: Nunito;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 25px;
+			color: #E5CECE;
+		}
+		div.parentElement{text-align: center;}
 
-              <div class="form-group text-right">
-                <a href="auth-forgot-password.html" class="float-left mt-3">
-                  Forgot Password?
-                </a>
-                <button type="submit" class="btn btn-primary btn-lg btn-icon icon-right" tabindex="4">
-                  Login
-                </button>
-              </div>
-
-              <div class="mt-5 text-center">
-                Don't have an account? <a href="auth-register.html">Create new one</a>
-              </div>
-            </form>
-
-            <div class="text-center mt-5 text-small">
-              Copyright &copy; Your Company. Made with 💙 by Stisla
-              <div class="mt-2">
-                <a href="#">Privacy Policy</a>
-                <div class="bullet"></div>
-                <a href="#">Terms of Service</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-8 col-12 order-lg-2 order-1 min-vh-100 background-walk-y position-relative overlay-gradient-bottom" data-background="../assets/img/unsplash/login-bg.jpg">
-          <div class="absolute-bottom-left index-2">
-            <div class="text-light p-5 pb-2">
-              <div class="mb-5 pb-3">
-                <h1 class="mb-2 display-4 font-weight-bold">Good Morning</h1>
-                <h5 class="font-weight-normal text-muted-transparent">Bali, Indonesia</h5>
-              </div>
-              Photo by <a class="text-light bb" target="_blank" href="https://unsplash.com/photos/a8lTjWJJgLA">Justin Kauffman</a> on <a class="text-light bb" target="_blank" href="https://unsplash.com">Unsplash</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  
+		.btn-work {
+			width: 150px;
+			height: 50px;
+			margin: 0 auto;
+			padding: 0;
+			display: inline-block;
+			line-height: 50px;
+			text-align: center;
+		}
+		.form-input{
+			height: 47px;
+			background: #FFFFFF;
+			border-radius: 15px;
+		}
+	</style>
+	</head>
+	
+	<body>
+	<div class="container cont-login">
+	<div class="jumbotron jumbotron-fluid jumb-login">
+		<h1>Login</h1>
+		<form action="/action_page.php">
+			<div class="form-group">
+				<label for="email" class="teks">Username:</label>
+				<input type="email" class="form-control form-input" id="email" placeholder="Masukkan username Anda" name="email">
+			</div>
+			<div class="form-group">
+				<label for="pwd" class="teks">Password:</label>
+				<input type="password" class="form-control form-input" id="pwd" placeholder="Masukkan password Anda" name="pswd">
+			</div>
+			<button type="submit" class="btn masuk-btn float-right">Masuk</button>
+		</form>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
