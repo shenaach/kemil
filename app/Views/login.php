@@ -29,14 +29,14 @@
 		}
 		.jumbotron h1{
 			font-family: 'Nunito', sans-serif;
-			font-weight: bold;
+			font-weight: 900;
 			font-size: 36px;
 			color: #452E2E;
 		}
 		.teks{
 			font-family: 'Nunito', sans-serif;
 			font-style: normal;
-			font-weight: normal;
+			font-weight: bold;
 			font-size: 18px;
 			line-height: 25px;
 			display: flex;
@@ -56,7 +56,7 @@
 			border-radius: 20px;
 			font-family: Nunito;
 			font-style: normal;
-			font-weight: normal;
+			font-weight: bold;
 			font-size: 18px;
 			line-height: 25px;
 			color: #E5CECE;
@@ -84,35 +84,6 @@
 	<div class="container cont-login">
 	<div class="jumbotron jumbotron-fluid jumb-login">
 		<h1>Login</h1>
-		<!--<form class="form-horizontal form-group" method="post">
-		<div class="form-group">
-			  <label class="control-label col-sm-2" for="email">Email:</label>
-			  <div class="col-sm-10">
-				<input type="text" class="form-control" id="user_email" name="user_email" placeholder="Enter email" />
-				<span class="text-danger"></span>
-			  </div>
-			</div>
-			<div class="form-group">
-			  <label class="control-label col-sm-2" for="pwd">Password:</label>
-			  <div class="col-sm-10">          
-				<input type="password" class="form-control" id="user_password" placeholder="Enter password" name="user_password" />
-				<span class="text-danger" style="font-size:30px;"></span>
-			  </div>
-			</div>
-			<div class="form-group">        
-			  <div class="col-sm-offset-2 col-sm-10">
-				<div class="checkbox">
-				  <label><input type="checkbox" name="remember"> Remember me</label>
-				</div>
-			  </div>
-			</div>
-			<div class="form-group">        
-			  <div class="col-sm-offset-2 col-sm-10">
-				<input type="submit" class="btn btn-default" value="Login" name="login"/>
-				<a>&nbsp Sign up</a>
-			  </div>
-			</div>
-		</form>-->
 		<form action="/action_page.php">
 			<div class="form-group">
 				<label for="email" class="teks">Username:</label>
